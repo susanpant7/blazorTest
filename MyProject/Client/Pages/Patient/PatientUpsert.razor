@@ -1,0 +1,71 @@
+﻿@page "/patient-list/edit/{PatientId:int}"
+@page "/patient-list/create"
+
+@using MyProject.Shared
+
+@inject NavigationManager NavManager
+
+
+<div class="row mt-2 mb-5">
+    <h3 class="card-title text-alert-info mb-3 ml-3">@Title Patient</h3>
+    <h1>Patient id is @PatientId</h1>
+</div>
+<EditForm Model="PatientModel" OnValidSubmit="OnFormSubmit">
+    <DataAnnotationsValidator />
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <InputText @bind-Value="PatientModel.FirstName" class="form-control" />
+        <ValidationMessage For="()=>PatientModel.FirstName" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Last Name</label>
+        <InputText @bind-Value="PatientModel.LastName" class="form-control" />
+        <ValidationMessage For="()=>PatientModel.LastName" />
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">@Title Patient</button>
+    <NavLink class="btn btn-secondary" href="PatientModel-list">Back To List</NavLink>
+</EditForm>
+
+@code {
+    [Parameter]
+    public int PatientId { get; set; }
+
+    private string Title = "Create";
+
+    public Patient PatientModel { get; set; } = new Patient();
+
+    [Inject]
+    public IPatientService PatientService { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (PatientId != null)
+        {
+            // updating
+            Title = "Update";
+            // PatientModel = PatientService.GetPatientById(PatientId);
+        }
+        else
+        {
+            // create
+            PatientModel = new Patient();
+        }
+    }
+
+    private async Task OnFormSubmit()
+    {
+        if (PatientModel.PatientId != 0 && Title == "Update")
+        {
+            // update
+        }
+        else
+        {
+            await PatientService.CreatePatient(PatientModel);
+        }
+        NavManager.NavigateTo("PatientModel-list");
+    }
+
+}

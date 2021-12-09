@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9f1d6703-7859-4871-b737-b494fcc072a3": {
+      "ProjectGuid": "9f1d6703-7859-4871-b737-b494fcc072a3",
+      "DisplayName": "MyProject.Server",
+      "ColorIndex": 0
+    },
+    "919d3cf0-2643-4e13-b318-754a4bcc7e32": {
+      "ProjectGuid": "919d3cf0-2643-4e13-b318-754a4bcc7e32",
+      "DisplayName": "MyProject.Client",
+      "ColorIndex": 1
+    },
+    "a7d3cc7b-860c-4988-8538-a4c6f11fb47a": {
+      "ProjectGuid": "a7d3cc7b-860c-4988-8538-a4c6f11fb47a",
+      "DisplayName": "MyProject.Shared",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}

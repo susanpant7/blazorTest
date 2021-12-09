@@ -1,0 +1,122 @@
+﻿@page "/assessment-info-list"
+
+@using MyProject.Shared
+
+
+<div class="row mt-3">
+    <div class="col-8">
+        <h4 class="card-card-title text-info">Assessment Infos</h4>
+    </div>
+    <div class="col-3 offset-1">
+        <NavLink href="assessment-list/create" class="btn btn-info form-control">Add New Assessment</NavLink>
+    </div>
+
+    <div class="col-12">
+        the token is ==> @cwtoken
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Code</th>
+                    <th scope="col">Json</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Assessments.Any())
+                {
+                    @foreach (var asm in Assessments)
+                    {
+                        <tr>
+                            <td>@asm.Name</td>
+                            <td>@asm.Type</td>
+                            <td>@asm.Code</td>
+                            <td>@asm.AssessmentJson</td>
+                            <td>
+
+                                <NavLink href="@($"assessment-list/edit/{asm.AssessmentInfoId}")" class="btn btn-primary">
+                                    <span class="oi oi-pencil" aria-hidden="true">Edit</span>
+                                </NavLink>
+                                <button class="btn btn-danger">
+                                    <span class="oi oi-trash" aria-hidden="true">Delete</span>
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td>
+                            No Records Found
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@code {
+    public List<AssessmentInfo> Assessments { get; set; } = new List<AssessmentInfo>();
+    private bool Confirmed = false;
+    public string cwtoken = "";
+    // when the page is initialized, get all the assessments
+    //protected override Task OnInitializedAsync()
+    //{
+    //    Assessments = GetAssessments();
+    //}
+
+    //private List<AssessmentInfo> GetAssessments()
+    //{
+    //    AssessmentInfo ai1 = new AssessmentInfo
+    //        {
+    //            AssessmentInfoId = 1,
+    //            Name = "Asssessment 1",
+    //            Code = "Asm1",
+    //            Type = "Custom",
+    //            AssessmentJson = "{'a':'1'}",
+    //            CreatedBy = ""
+    //        };
+
+    //    AssessmentInfo ai2 = new AssessmentInfo
+    //        {
+    //            AssessmentInfoId = 1,
+    //            Name = "Asssessment 2",
+    //            Code = "Asm2",
+    //            Type = "Custom",
+    //            AssessmentJson = "{'a':'1'}",
+    //            CreatedBy = ""
+    //        };
+
+    //    AssessmentInfo ai3 = new AssessmentInfo
+    //        {
+    //            AssessmentInfoId = 1,
+    //            Name = "Asssessment 3",
+    //            Code = "Asm3",
+    //            Type = "Custom",
+    //            AssessmentJson = "{'a':'1'}",
+    //            CreatedBy = ""
+    //        };
+
+    //    AssessmentInfo ai4 = new AssessmentInfo
+    //        {
+    //            AssessmentInfoId = 1,
+    //            Name = "Asssessment 4",
+    //            Code = "Asm4",
+    //            Type = "Factory",
+    //            AssessmentJson = "{'a':'1'}",
+    //            CreatedBy = ""
+    //        };
+
+    //    return new List<AssessmentInfo> { ai1, ai2, ai3, ai4 };
+    }
+
+
+
+
+
+
+}

@@ -1,0 +1,154 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\susan.pant\\source\\repos\\MyProject\\MyProject\\Client\\MyProject.Client.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\susan.pant\\source\\repos\\MyProject\\MyProject\\Client\\MyProject.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\susan.pant\\source\\repos\\MyProject\\MyProject\\Client\\MyProject.Client.csproj",
+        "projectName": "MyProject.Client",
+        "projectPath": "C:\\Users\\susan.pant\\source\\repos\\MyProject\\MyProject\\Client\\MyProject.Client.csproj",
+        "packagesPath": "C:\\Users\\susan.pant\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\susan.pant\\source\\repos\\MyProject\\MyProject\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\susan.pant\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://plugintest.deerwalk.com/artifactory/api/nuget/cgt-nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://cedargate-383530046460.d.codeartifact.us-east-1.amazonaws.com/nuget/cgt-nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\susan.pant\\source\\repos\\MyProject\\MyProject\\Shared\\MyProject.Shared.csproj": {
+                "projectPath": "C:\\Users\\susan.pant\\source\\repos\\MyProject\\MyProject\\Shared\\MyProject.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Syncfusion.Blazor.Grid": {
+              "target": "Package",
+              "version": "[19.3.0.57, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[6.0.0, 6.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\susan.pant\\source\\repos\\MyProject\\MyProject\\Shared\\MyProject.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\susan.pant\\source\\repos\\MyProject\\MyProject\\Shared\\MyProject.Shared.csproj",
+        "projectName": "MyProject.Shared",
+        "projectPath": "C:\\Users\\susan.pant\\source\\repos\\MyProject\\MyProject\\Shared\\MyProject.Shared.csproj",
+        "packagesPath": "C:\\Users\\susan.pant\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\susan.pant\\source\\repos\\MyProject\\MyProject\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\susan.pant\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://plugintest.deerwalk.com/artifactory/api/nuget/cgt-nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://cedargate-383530046460.d.codeartifact.us-east-1.amazonaws.com/nuget/cgt-nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

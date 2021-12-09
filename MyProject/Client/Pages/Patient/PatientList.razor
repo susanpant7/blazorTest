@@ -1,0 +1,78 @@
+﻿@page "/patient-list"
+
+@using MyProject.Shared
+
+
+<div class="row mt-3">
+    <div class="col-8">
+        <h4 class="card-card-title text-info">Patient Infos</h4>
+    </div>
+    <div class="col-3 offset-1">
+        <NavLink href="patient-list/create" class="btn btn-info form-control">Add New Patient</NavLink>
+    </div>
+
+    <div class="col-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Patients.Any())
+                {
+                    @foreach (var patient in Patients)
+                    {
+                        <tr>
+                            <td>@patient.PatientId</td>
+                            <td>@patient.FirstName</td>
+                            <td>@patient.LastName</td>
+                            
+                            <td>
+
+                                <NavLink href="@($"patient-list/edit/{patient.PatientId}")" class="btn btn-primary">
+                                    <span class="oi oi-pencil" aria-hidden="true">Edit</span>
+                                </NavLink>
+                                <button class="btn btn-danger">
+                                    <span class="oi oi-trash" aria-hidden="true">Delete</span>
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td>
+                            No Records Found
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@code {
+    public List<Patient> Patients { get; set; } = new List<Patient>();
+
+    [Inject]
+    public IPatientService PatientService { get; set; }
+
+    //protected override async Task OnInitializedAsync()
+    //{
+    //    Patients = (await PatientService.GetAllPatients()).ToList();
+    //}
+
+   
+
+
+
+
+
+
+}

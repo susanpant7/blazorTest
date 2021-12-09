@@ -1,0 +1,11 @@
+C:\Users\susan.pant\source\repos\MyProject\MyProject\Shared\bin\Debug\net6.0\MyProject.Shared.deps.json
+C:\Users\susan.pant\source\repos\MyProject\MyProject\Shared\bin\Debug\net6.0\MyProject.Shared.dll
+C:\Users\susan.pant\source\repos\MyProject\MyProject\Shared\bin\Debug\net6.0\ref\MyProject.Shared.dll
+C:\Users\susan.pant\source\repos\MyProject\MyProject\Shared\bin\Debug\net6.0\MyProject.Shared.pdb
+C:\Users\susan.pant\source\repos\MyProject\MyProject\Shared\obj\Debug\net6.0\MyProject.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\susan.pant\source\repos\MyProject\MyProject\Shared\obj\Debug\net6.0\MyProject.Shared.AssemblyInfoInputs.cache
+C:\Users\susan.pant\source\repos\MyProject\MyProject\Shared\obj\Debug\net6.0\MyProject.Shared.AssemblyInfo.cs
+C:\Users\susan.pant\source\repos\MyProject\MyProject\Shared\obj\Debug\net6.0\MyProject.Shared.csproj.CoreCompileInputs.cache
+C:\Users\susan.pant\source\repos\MyProject\MyProject\Shared\obj\Debug\net6.0\MyProject.Shared.dll
+C:\Users\susan.pant\source\repos\MyProject\MyProject\Shared\obj\Debug\net6.0\ref\MyProject.Shared.dll
+C:\Users\susan.pant\source\repos\MyProject\MyProject\Shared\obj\Debug\net6.0\MyProject.Shared.pdb
